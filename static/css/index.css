@@ -150,7 +150,7 @@ body {
 }
 .vertical-images {
   text-align: center;
-  margin-bottom: 30px; 
+  margin-bottom: 20px;
 }
 
 .horizontal-images .item {
@@ -163,6 +163,9 @@ body {
   height: auto; 
 }
 
-
-
+.custom-hr {
+  margin: 20px auto;
+  border: none;
+  border-top: 1px solid #333;
+}
 
