@@ -2,13 +2,10 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
   <meta name="description" content="DESCRIPTION META TAG">
   <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
   <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
   <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
@@ -16,10 +13,8 @@
 
   <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
   <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
   <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -55,67 +50,19 @@
             <h1 class=" is-2 publication-title" style="font-size: 2.8rem;">
               <b>EMOS</b>: <b>E</b>mbodiment-aware Heterogeneous <b>M</b>ulti-robot <b>O</b>perating <b>S</b>ystem with LLM Agents
             </h1>
-            <!-- <div class="is-size-5 publication-authors">
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-            </div> -->
             <div class="is-size-5 publication-authors">
-              <span class="author-block">Anonymous Authors</br><i>Under Submission</i></span>
+              <span class="author-block">Anonymous Authors</br><i>Under Review</i></span>
             </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://openreview.net/forum?id=Ey8KcabBpB" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="#" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="#" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- ArXiv abstract Link -->
+            <div class="column has-text-centered">
+              <div class="publication-links">
                 <span class="link-block">
-                  <a href="#" target="_blank"
+                  <a href="https://openreview.net/forum?id=Ey8KcabBpB" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                    <i class="ai ai-arxiv"></i>
+                    <i class="fas fa-file-pdf"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>Paper</span>
                 </a>
               </span>
             </div>
@@ -127,14 +74,12 @@
 </section>
 
 <!-- Teaser video-->
-<section class="hero teaser" style="margin-top: -25px;">
+<section class="hero teaser">
   <div class="container is-max-widescreen">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/emos-demo.mp4"
-        type="video/mp4">
-      </video>
+      <div class="publication-video">
+        <iframe src="https://youtube.com/embed/icOXdZD4P70" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
       <h2 class="subtitle has-text-centered">
         We introduce a novel multi-agent framework designed to enable effective collaboration among heterogeneous robots with varying embodiments and capabilities, along with a new benchmark named Habitat-MAS.
       </h2>
@@ -144,15 +89,13 @@
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
-<section class="section hero" style="margin-top: -50px;">
+<section class="section hero">
   <div class="container is-max-desktop">
     <div class="is-centered has-text-centered">
       <h2 class="title is-3">Abstract</h2>
-      <div class="content has-text-justified" style="width: 90%; margin: 0 auto;">
+      <div class="content has-text-justified">
         <p>
           Heterogeneous multi-robot systems (HMRS) have emerged as a powerful approach for tackling complex tasks that single robots cannot manage alone. Current large-language-model-based multi-agent systems (LLM-based MAS) have shown success in areas like software development and operating systems, but applying these systems to robot control presents unique challenges. In particular, the capabilities of each agent in a multi-robot system are inherently tied to the physical composition of the robots, rather than predefined roles.
-<!--          </p>-->
-<!--          <p>-->
           To address this issue, we introduce a novel multi-agent framework designed to enable effective collaboration among heterogeneous robots with varying embodiments and capabilities, along with a new benchmark named Habitat-MAS. One of our key designs is <i>Robot Resume</i>: Instead of adopting human-designed role play, we propose a self-prompted approach, where agents comprehend robot URDF files and call robot kinematics tools to generate descriptions of their physics capabilities to guide their behavior in task planning and action execution. The Habitat-MAS benchmark is designed to assess how a multi-agent framework handles tasks that require embodiment-aware reasoning, which includes 1) manipulation, 2) perception, 3) navigation, and 4) comprehensive multi-floor object rearrangement. The experimental results indicate that the robot's resume and the hierarchical design of our multi-agent system are essential for the effective operation of the heterogeneous multi-robot system within this intricate problem context.
         </p>
       </div>
@@ -161,24 +104,13 @@
 </section>
 <!-- End paper abstract -->
 
-<!-- Image carousel -->
-<section class="hero" style="margin-top: -60px;">
+<!-- Overview -->
+<section class="hero" >
   <div class="hero-body">
     <div class="container is-max-widescreen">
-      <div class="results-carousel">
-        <hr class="custom-hr">
-        <h2 class="title is-3">Embodiment-aware LLM-based MAS</h2>
-        <div class="vertical-images">
-          <img src="static/images/teaser.jpg" alt="teaser"/>
-        </div>
-        <div class="content has-text-justified">
-          <p>
-            <b>Embodiment-aware LLM-based MAS.</b> This figure depicts how an LLM-based MAS operate a HMRS composed of dones, legged robots and wheeled robots with robotic arms, in a multi-floor house. When given a household task, the LLM-based MAS needs to undertand their respective robots' hardware specifications for task planning and assignment. The authors refer this capability as "embodiment-aware reasoning" in this work.
-          </p>
-        </div>
-        <hr class="custom-hr">
+      <div class="is-centered has-text-centered">
         <h2 class="title is-3">EMOS Framework Overview</h2>
-        <div class="vertical-images">
+        <div class="vertical-images" style="max-width: 90%; margin: 0 auto;">
           <img src="static/images/framework.jpg" alt="framework"/>
         </div>
         <div class="content has-text-justified">
@@ -190,129 +122,69 @@
     </div>
   </div>
 </section>
-
-<!-- End image carousel -->
-
-<section class="hero is-small" style="margin-top: -60px;">
-  <div class="hero-body">
-    <div class="container is-max-widescreen">
-      <hr class="custom-hr">
-      <div id="results-carousel" class="carousel results-carousel horizontal-images">
-        <div class="item">
-          <h2 class="title is-3 has-text-centered">Robot Resume Generation</h2>
-          <img src="static/images/robot_resume.jpg" alt="MY ALT TEXT"/>
-        </div>
-        <div class="item">
-          <h2 class="title is-3 has-text-centered">Habitat-MAS Benchmark</h2>
-          <img src="static/images/benchmark.jpg" alt="MY ALT TEXT"/>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Youtube video -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-<!-- End youtube video -->
-
+<!-- End overview -->
 
 <!-- Video carousel -->
-<section class="hero is-small">
+<section class="hero">
   <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Habitat-MAS Task Demo</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <source src="static/videos/navigation.mp4"
-            type="video/mp4">
+    <div class="container is-max-widescreen">
+      <div class="field is-centered has-text-centered">
+        <h2 class="title is-3">Tasks in Habitat-MAS Benchmark</h2>
+        <div class="control is-flex is-justify-content-center" style="margin-bottom: 30px;">
+          <div class="select is-rounded is-link">
+            <select id="videoSelect">
+              <option value="navigation">Multi-floor Navigation</option>
+              <option value="perception">Single-floor Perception</option>
+              <option value="single_manipulation">Single-floor Manipulation</option>
+              <option value="multi_manipulation">Multi-floor Manipulation</option>
+            </select>
+          </div>
+        </div>
+        <div id="video-container" style="display: flex; justify-content: center; align-items: center;">
+          <video id="videoPlayer" autoplay controls muted loop style="height: 400px; width: auto; object-fit: cover;">
+            <source src="static/videos/navigation.mp4" type="video/mp4">
           </video>
         </div>
-        <!-- <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div> -->
+        <script>
+          const videoSelect = document.getElementById('videoSelect');
+          const videoPlayer = document.getElementById('videoPlayer');
+
+          videoSelect.addEventListener('change', function() {
+            const selectedOption = videoSelect.value;
+            if (selectedOption === 'navigation') {
+              videoPlayer.src = 'static/videos/navigation.mp4';
+            } else if (selectedOption === 'perception') {
+              videoPlayer.src = 'static/videos/perception.mp4';
+            } else if (selectedOption === 'single_manipulation') {
+              videoPlayer.src = 'static/videos/single_manipulation.mp4';
+            } else if (selectedOption === 'multi_manipulation') {
+              videoPlayer.src = 'static/videos/multi_manipulation.mp4';
+            }
+            videoPlayer.load();
+          });
+        </script>
       </div>
     </div>
   </div>
 </section>
 <!-- End video carousel -->
 
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
+<footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
-
           <p>
             This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
-
         </div>
       </div>
     </div>
   </div>
 </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+</body>
+</html>
