@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>EMOS: Embodiment-aware Heterogeneous Multi-robot Operating System with LLM Agents</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-widescreen">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class=" is-2 publication-title" style="font-size: 2.8rem;">
+              <b>EMOS</b>: <b>E</b>mbodiment-aware Heterogeneous <b>M</b>ulti-robot <b>O</b>perating <b>S</b>ystem with LLM Agents
+            </h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Anonymous Authors</br><i>Under Review</i></span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://openreview.net/forum?id=Ey8KcabBpB" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-widescreen">
+    <div class="hero-body">
+      <div class="publication-video">
+        <iframe src="https://youtube.com/embed/icOXdZD4P70" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      <h2 class="subtitle has-text-centered">
+        We introduce a novel multi-agent framework designed to enable effective collaboration among heterogeneous robots with varying embodiments and capabilities, along with a new benchmark named Habitat-MAS.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="is-centered has-text-centered">
+      <h2 class="title is-3">Abstract</h2>
+      <div class="content has-text-justified">
+        <p>
+          Heterogeneous multi-robot systems (HMRS) have emerged as a powerful approach for tackling complex tasks that single robots cannot manage alone. Current large-language-model-based multi-agent systems (LLM-based MAS) have shown success in areas like software development and operating systems, but applying these systems to robot control presents unique challenges. In particular, the capabilities of each agent in a multi-robot system are inherently tied to the physical composition of the robots, rather than predefined roles.
+          To address this issue, we introduce a novel multi-agent framework designed to enable effective collaboration among heterogeneous robots with varying embodiments and capabilities, along with a new benchmark named Habitat-MAS. One of our key designs is <i>Robot Resume</i>: Instead of adopting human-designed role play, we propose a self-prompted approach, where agents comprehend robot URDF files and call robot kinematics tools to generate descriptions of their physics capabilities to guide their behavior in task planning and action execution. The Habitat-MAS benchmark is designed to assess how a multi-agent framework handles tasks that require embodiment-aware reasoning, which includes 1) manipulation, 2) perception, 3) navigation, and 4) comprehensive multi-floor object rearrangement. The experimental results indicate that the robot's resume and the hierarchical design of our multi-agent system are essential for the effective operation of the heterogeneous multi-robot system within this intricate problem context.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Overview -->
+<section class="hero" >
+  <div class="hero-body">
+    <div class="container is-max-widescreen">
+      <div class="is-centered has-text-centered">
+        <h2 class="title is-3">EMOS Framework Overview</h2>
+        <div class="vertical-images" style="max-width: 90%; margin: 0 auto;">
+          <img src="static/images/framework.jpg" alt="framework"/>
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            <b>EMOS Framework.</b> This figure illustrates how EMOS operates an HMRS on the Habitat-MAS platform. There are three stages: 1) Scene Context Construction involves generating scene descriptions in a bottom-up approach, relying on an ideal semantic SLAM system. 2) In Centralized Group Discussion, agents perform embodiment-aware reasoning for task planning and assignment 3) In Decentralized Action Parallel Execution, agents execute actions parallely with initial context and agent history. Precisely speaking, EMOS only includes stages 2 and 3, while stage 1 is integrated inside the Habitat-MAS platform. We include it in this diagram for completeness and clarity.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End overview -->
+
+<!-- Video carousel -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-widescreen">
+      <div class="field is-centered has-text-centered">
+        <h2 class="title is-3">Tasks in Habitat-MAS Benchmark</h2>
+        <div class="control is-flex is-justify-content-center" style="margin-bottom: 30px;">
+          <div class="select is-rounded is-link">
+            <select id="videoSelect">
+              <option value="navigation">Multi-floor Navigation</option>
+              <option value="perception">Single-floor Perception</option>
+              <option value="single_manipulation">Single-floor Manipulation</option>
+              <option value="multi_manipulation">Multi-floor Manipulation</option>
+            </select>
+          </div>
+        </div>
+        <div id="video-container" style="display: flex; justify-content: center; align-items: center;">
+          <video id="videoPlayer" autoplay controls muted loop style="height: 400px; width: auto; object-fit: cover;">
+            <source src="static/videos/navigation.mp4" type="video/mp4">
+          </video>
+        </div>
+        <script>
+          const videoSelect = document.getElementById('videoSelect');
+          const videoPlayer = document.getElementById('videoPlayer');
+
+          videoSelect.addEventListener('change', function() {
+            const selectedOption = videoSelect.value;
+            if (selectedOption === 'navigation') {
+              videoPlayer.src = 'static/videos/navigation.mp4';
+            } else if (selectedOption === 'perception') {
+              videoPlayer.src = 'static/videos/perception.mp4';
+            } else if (selectedOption === 'single_manipulation') {
+              videoPlayer.src = 'static/videos/single_manipulation.mp4';
+            } else if (selectedOption === 'multi_manipulation') {
+              videoPlayer.src = 'static/videos/multi_manipulation.mp4';
+            }
+            videoPlayer.load();
+          });
+        </script>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
